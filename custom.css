@@ -1,0 +1,201 @@
+/* 
+WOO CUSTOM STYLESHEET
+---------------------
+
+Instructions:
+
+Add your custom styles in this file instead of style.css so it 
+is easier to update the theme. Simply copy an existing style 
+from style.css to this file, and modify it to your liking. */
+
+a {color:#a9060e;}
+
+#header-container {
+	box-shadow:0 2px 6px #555555;
+	-webkit-box-shadow:0 2px 6px #555555;
+}
+#header{padding:15px 0 5px;}
+
+h1, h2, h3, h4, h5, h6, .widget h3, .post .title, .section .post .title, .archive_header, #title-container h1.title {
+    font-family: Georgia, Georgia, "Times New Roman", Times, serif;
+}
+
+.slide .entry h2 {font-weight:normal;}
+
+.nav a, #portfolio .post h3 a {font-family:Helvetica, Arial, sans-serif;}
+
+#hhtml{
+	float:right;
+	width:26%;
+	overflow:hidden;
+	margin-bottom:0;
+}
+#hhtml a.button{
+	background:#D98E2B;
+	font-weight:bold;
+	font-size:14px;
+	padding:4px 12px;
+	margin:0 20px 0 0;
+	float:right;
+}
+
+#content {padding:0;}
+
+.entry, .entry p {font-size:14px;}
+
+#sidebar p, #sidebar li, #sidebar a {font-size:13px;}
+
+#sidebar {
+    border-left: 1px solid #E6E6E6;
+    margin-left: 25px;
+    padding-left: 25px;
+    width: 270px;
+}
+.section-title{color: #555555}
+/* #hhtml form{float:right;}
+#hhtml form input[type="submit"]{
+	background:#D98E2B;
+	font-weight:bold;
+	font-size:14px;
+	padding:5px 8px;
+	margin:0 0 0 6px;
+}
+#hhtml form input[type="text"]{margin-right:6px;} */
+
+#sform{
+	float:right;
+	width:246px;
+	overflow:hidden;
+}
+.search_main{padding:0;border:none;}
+#sform .searchform input.s{	padding:5px;}
+#sform .searchform input.search-submit{top:5px;}
+
+#content.page{padding:20px;background:#fff;}
+#navigation{margin-top:10px; padding-top:8px; float:left; clear:both;}
+
+.slide .slide-content.entry{left:20px;bottom:50px;width:47%;}
+
+body.home #content{padding:0;}
+
+#main .section { border:none; padding-bottom:0; }
+#main #portfolio, #main #sub-featured{background:#fff;padding:20px;width:96%;overflow: hidden;}
+#main .block{width:290px;clear:none;}
+#main #portfolio .block{margin: 0 10px 10px 0; width: 222px;}
+
+#sub-featured a{display:block;}
+#sub-featured h3.title a {color:#a9060e; font-weight:bold; font-family:Helvetica, Aria, san-serif;}
+#portfolio .portfolio-img a{display:block; overflow:hidden;}
+
+#rf-sb{float:right;}
+#main #sub-featured .fix{clear:left;}
+
+.gform_wrapper .top_label .gfield_label {width:auto;}
+
+.gform_wrapper .description, .gform_wrapper .gfield_description, .gform_wrapper .gsection_description, .gform_wrapper .instruction {font-size:13px; font-style:italic;}
+
+.gform_wrapper .ginput_complex label, .gform_wrapper .gfield_time_hour label, .gform_wrapper .gfield_time_minute label, .gform_wrapper .gfield_date_month label, .gform_wrapper .gfield_date_day label, .gform_wrapper .gfield_date_year label, .gform_wrapper .instruction {font-size:12px;}
+
+.portfolio .entry, #sub-featured .entry {margin:0;}
+
+#sub-featured .post .title {margin-bottom:8px;}
+
+#slides {padding:20px 0 5px}
+
+.slidespacer {
+    display: block;
+    height: 15px;
+    overflow: hidden;
+}
+
+/*  -------
+
+ACCORDIONS
+
+----------- */
+
+.accordion {
+	border:1px solid #969696;
+	margin-bottom:20px;
+}
+.accordion > h3 {
+	background: #ebebeb;
+	margin:0;
+	padding: .4em .8em;
+	border-bottom: 1px solid #cccccc;
+	cursor: pointer;
+	color: #666666;
+	letter-spacing:0;
+	text-transform: none;
+	font-family: Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+}
+.accordion > h3.active-header {
+	color:#ffffff;
+	background:#127e53;
+	background-image:url(../simplicity/images/wid-arr-up.png) , -moz-linear-gradient(top, #058a54 0%, #015332 100%);
+	background-image:url(../simplicity/images/wid-arr-up.png) , -webkit-gradient(linear, left top, left bottom, color-stop(0%,#058a54), color-stop(100%,#015332));
+	background-repeat:no-repeat;
+	background-position:98% 50%;
+	padding:0.4em 0.8em;
+}
+.no-multiplebgs .accordion > h3.active-header,
+.no-multiplebgs  .accordion > h3.active-header:hover{
+	background-image:url(../simplicity/images/wid-arr-up.png);
+	background-repeat:no-repeat;
+	background-position:98% 50%;
+}
+.accordion > h3.active-header:hover {
+	background: #058a54;
+	background: url(../simplicity/images/wid-arr-up.png) , -moz-linear-gradient(top, #015332 0%, #058a54 100%);
+	background: url(../simplicity/images/wid-arr-up.png) , -webkit-gradient(linear, left top, left bottom, color-stop(0%,#015332), color-stop(100%,#058a54));
+	background-repeat:no-repeat;
+	background-position:98% 50%;
+}
+.accordion > h3.inactive-header {
+	background: #eae9e9;
+	background-image:url(../simplicity/images/wid-arr-down.png) , -moz-linear-gradient(top, #eae9e9 0%, #dfdedd 100%);
+	background-image:url(../simplicity/images/wid-arr-down.png) , -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eae9e9), color-stop(100%,#dfdedd));
+	background-repeat:no-repeat;
+	background-position:98% 50%;
+	padding:0.4em 2em .4em .8em;
+}
+.no-multiplebgs .accordion > h3.inactive-header{
+	background-image:url(../simplicity/images/wid-arr-down.png);
+	background-repeat:no-repeat;
+	background-position:98% 50%;
+}
+.accordion > h3.inactive-header:hover {
+	background:#dddddd url(../simplicity/images/wid-arr-down.png) 98% 50% no-repeat;
+}
+.accordion > div {
+	display: none;
+	padding:10px 20px;
+	background: #ffffff;
+	border-top: 0;
+	overflow:auto;
+}
+
+/*  -------
+
+GRID TABLE
+
+----------- */
+#grid{
+	width:100%;
+}
+#grid, #grid td{
+	border:none;
+	text-align:center;
+}
+#grid td{
+	margin:0 15px 15px;
+}
+#grid .alt-table-row{background:none;}
+#grid h3{
+	display:block;
+	clear:both;
+	margin:6px 0 0;
+}
+#grid td img{float:none;margin:0;}
